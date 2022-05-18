@@ -10,5 +10,5 @@ func main() {
     fmt.Println("Please don't use it!")
     fmt.Println("What a taugh day!")
     fmt.Println("This message created by @deadl10n.")
-    log.Infof("Add log by @i0Ek3.")
+    log.Println("Add log by @i0Ek3.")
 }
