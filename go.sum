@@ -1,4 +1,6 @@
 github.com/davecgh/go-spew v1.1.1/go.mod h1:J7Y8YcW2NihsgmVo/mv3lAwl/skON4iLHjSsI+c5H38=
+github.com/i0Ek3/color v0.0.0-20211226140939-808f4a3191e6 h1:pSKC2QHclU91oNSIwM+mUKOobXv/CnOMdyFqNvkBAsY=
+github.com/i0Ek3/color v0.0.0-20211226140939-808f4a3191e6/go.mod h1:Y9g9MtRl9/f5p53jqQi7qDv9azSluXuchDFG1rXlvgM=
 github.com/pmezard/go-difflib v1.0.0/go.mod h1:iKH77koFhYxTK1pcRnkKkqfTogsbg7gZNVY4sRDYZ/4=
 github.com/sirupsen/logrus v1.8.1 h1:dJKuHgqk1NNQlqoA6BTlM1Wf9DOH3NBjQyu0h9+AZZE=
 github.com/sirupsen/logrus v1.8.1/go.mod h1:yWOB1SBYBC5VeMP7gHvWumXLIWorT60ONWic61uBYv0=
