@@ -14,4 +14,9 @@ func main() {
     fmt.Println(color.Yellow("This message created by @deadl10n."))
     log.Warnf("Add log by @i0Ek3.")
     fmt.Println(color.Colorize("cyan", "add new lib"))
+    hi("deadl10n")
 }
+
+func hi(name string) {
+    fmt.Println("Hi,", name)
+} 
