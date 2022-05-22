@@ -1,0 +1,17 @@
+syntax = "proto3";
+
+option go_package = "github.com/i0Ek3/gitflow-demo/hi";
+
+package hi;
+
+service Greeter {
+    rpc SayHi(HiReq) returns (HiResp) {} 
+}
+
+message HiReq {
+    string name = 1;
+}
+
+message HiResp {
+    string msg = 1;
+}
