@@ -33,7 +33,7 @@ jobs:
           go build -v -o demo .
 
       - name: Collect main.go file
-        uses: actions/upload-artifact@v1.1.0
+        uses: actions/upload-artifact@v3
         with:
           name: main-output
           path: main.go
