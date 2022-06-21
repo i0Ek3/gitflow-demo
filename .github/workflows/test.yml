@@ -16,7 +16,7 @@ jobs:
 
     steps:
       - name: Set up Go ${{ matrix.go_version }}
-        uses: actions/setup-go@latest
+        uses: actions/setup-go@v2
         with:
           go-version: ${{ matrix.go_version }}
         id: go
@@ -33,7 +33,7 @@ jobs:
           go build -v -o demo .
 
       - name: Collect main.go file
-        uses: actions/upload-artifact@latest
+        uses: actions/upload-artifact@1.1.0
         with:
           name: main-output
           path: main.go
