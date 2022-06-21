@@ -1,0 +1,39 @@
+name: gitflow-demo Test
+
+on: push
+
+jobs:
+  build:
+    name: Test with go ${{ matrix.go_version }} on ${{ matrix.os }}
+    runs-on: ${{ matrix.os }}
+    environment:
+      name: gitflow
+
+    strategy:
+      matrix:
+        go_version: [1.18]
+        os: [ubuntu-latest, macOS-latest]
+
+    steps:
+      - name: Set up Go ${{ matrix.go_version }}
+        uses: actions/setup-go@latest
+        with:
+          go-version: ${{ matrix.go_version }}
+        id: go
+
+      - name: Check out code into the Go module directory
+        uses: actions/checkout@v2
+
+      - name: Run tide command
+        run: |
+          go mod tidy
+
+      - name: Build
+        run: |
+          go build -v -o demo .
+
+      - name: Collect main.go file
+        uses: actions/upload-artifact@latest
+        with:
+          name: main-output
+          path: main.go
