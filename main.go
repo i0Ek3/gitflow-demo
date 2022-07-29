@@ -15,8 +15,14 @@ func main() {
     log.Warnf("Add log by @i0Ek3.")
     fmt.Println(color.Colorize("cyan", "add new lib"))
     hi("deadl10n")
+    debug(hi)
 }
 
 func hi(name string) {
     fmt.Println("Hi,", name)
 } 
+
+func debug(msg ...any) {
+    s := fmt.Sprintf("------> %s::", msg)
+    fmt.Println(s)
+}
